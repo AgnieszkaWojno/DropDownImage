@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Strona drop down</title>
+    <style>
+      
+        .drop {
+            position: relative;
+            margin: 50px;
+            display: inline-block;
+            opacity: 0.8;
+        }
+
+        .drop_down {
+            position: absolute;
+            display: none;
+
+        }
+
+
+        .drop:hover {
+            opacity: 1;
+        }
+
+
+        .drop:hover .drop_down {
+            display: block;
+            opacity: 1.0;
+        }
+
+        .drop_down>p {
+            padding: 20px;
+            font-size: 2em;
+            font-family: monospace;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.9);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div >
+        <div class="drop"><img src="fire-department20.jpg" alt="obrazek">
+            <div class="drop_down"><img src="fire-department70.jpg" alt="obrazek">
+                <p>Wóz strażacki z minionej epoki</p>
+            </div>
+        </div>
+
+        <div class="drop"><img src="open-window20.jpg" alt="obrazek">
+            <div class="drop_down"><img src="open-window70.jpg" alt="obrazek">
+                <p>Otwarte okno</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
